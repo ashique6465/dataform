@@ -20,9 +20,9 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Ensure you post to the local server address
+      // Use the Vercel-deployed backend link
       const response = await axios.post(
-        "http://localhost:3000/bfhl",
+        "https://dataform-sigma.vercel.app/bfhl",
         JSON.parse(jsonInput)
       );
       setResponseData(response.data);
