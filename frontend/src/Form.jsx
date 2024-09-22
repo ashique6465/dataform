@@ -22,7 +22,7 @@ function Form() {
     try {
       // Use the Vercel-deployed backend link with the correct endpoint
       const response = await axios.post(
-        "https://dataform-sigma.vercel.app/api/bfhl", // Updated endpoint
+        "https://dataform-sigma.vercel.app/api/bfhl",
         JSON.parse(jsonInput)
       );
       setResponseData(response.data);
