@@ -20,9 +20,9 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Use the Vercel-deployed backend link with the correct endpoint
+      // Use the Vercel-deployed backend link
       const response = await axios.post(
-        "https://dataform-sigma.vercel.app/api/bfhl",
+        "https://vercel.com/md-ashique-alis-projects/dataform/bfhl",
         JSON.parse(jsonInput)
       );
       setResponseData(response.data);
@@ -38,7 +38,7 @@ function Form() {
 
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <div className="p-6 max-w-sm w-full text-black rounded-lg shadow-lg space-y-4 flex flex-col justify-center items-center text-center bg-[#F3F4F6]">
+      <div className="p-6 max-w-sm text-black rounded-lg shadow-lg space-y-4 flex flex-col justify-center items-center text-center bg-[#F3F4F6]">
         <h1 className="text-4xl font-semibold">Data Form</h1>
         <form onSubmit={handleSubmit} className="w-full">
           <textarea
