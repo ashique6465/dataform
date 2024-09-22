@@ -22,7 +22,7 @@ function Form() {
     try {
       // Use the Vercel-deployed backend link
       const response = await axios.post(
-        "https://vercel.com/md-ashique-alis-projects/dataform/bfhl",
+        "https://dataform-three.vercel.app/bfhl",
         JSON.parse(jsonInput)
       );
       setResponseData(response.data);
